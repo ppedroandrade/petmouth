@@ -11,8 +11,8 @@ export default function Hero() {
             O sorriso do seu cão <em>começa</em> com um hábito de 2 minutos.
           </h1>
           <p className="hero-sub">
-            80% dos cães com mais de 3 anos têm doença periodontal — e quase nenhum tutor percebe a
-            tempo. Comece hoje escovar sem briga.
+            A doença periodontal é muito comum em cães adultos e pode passar despercebida pelos tutores. 
+            Aprenda a criar uma rotina de escovação gradual, segura e sem briga.
           </p>
           <div className="hero-cta-row">
             <a className="btn btn-primary btn-large" href="#kit">
@@ -55,10 +55,8 @@ export default function Hero() {
 
           <div className="seal">
             <div className="seal-content">
-              <div className="seal-eyebrow">Estudo feito por</div>
+              <div className="seal-eyebrow">Projeto acadêmico</div>
               <div className="seal-inner">
-                Alunos da
-                <br />
                 UDC
               </div>
               <div className="seal-stars">★★★★★</div>
@@ -79,7 +77,7 @@ export default function Hero() {
               <Icon name="shield" size={18} />
             </div>
             <div className="fc-text">
-              <div className="fc-title">Sem tártaro</div>
+              <div className="fc-title">Prevenção diária</div>
             </div>
           </div>
         </div>

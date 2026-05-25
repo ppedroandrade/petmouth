@@ -58,12 +58,11 @@ export default function Diagnostic() {
       <div className="container">
         <div className="section-head">
           <div>
-            <span className="eyebrow">Diagnóstico visual</span>
+            <span className="eyebrow">Sinais visuais</span>
             <h2 style={{ marginTop: 18 }}>Saiba reconhecer — antes que vire problema.</h2>
           </div>
           <p>
-            Compare a boca do seu cão com as imagens abaixo. Se identificar tártaro ou gengivite,
-            comece o protocolo hoje e agende avaliação veterinária.
+            Compare a boca do seu cão com as imagens abaixo. Se notar tártaro, gengiva vermelha, sangramento ou dor, agende uma avaliação veterinária antes de insistir na escovação.
           </p>
         </div>
         <div className="diag-grid">

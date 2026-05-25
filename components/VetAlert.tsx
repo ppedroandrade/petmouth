@@ -3,10 +3,10 @@ import ImgBox from "./ImgBox";
 
 const signs = [
   { t: "Mau hálito persistente", s: "Cheiro forte que não passa nem com escovação." },
-  { t: "Sangramento ao escovar", s: "Gengiva sangra com toque leve — gengivite estabelecida." },
+  { t: "Sangramento ao escovar", s: "Gengiva que sangra com toque leve pode indicar inflamação e precisa de avaliação." },
   { t: "Dificuldade pra mastigar", s: "Mastiga só de um lado, deixa pedaços, evita ração dura." },
-  { t: "Salivação excessiva ou com sangue", s: "Sinal de inflamação avançada ou abscesso dental." },
-  { t: "Mudança de comportamento ao comer", s: "Late, recusa, late ao tocar a boca — está doendo." },
+  { t: "Salivação excessiva ou com sangue", s: "Pode indicar inflamação, dor oral, ferida ou infecção." },
+  { t: "Mudança de comportamento ao comer", s: "Recusa alimento, reage ao toque ou muda o jeito de mastigar — pode haver dor ou desconforto." },
   {
     t: "Dente quebrado ou móvel",
     s: "Emergência. Pode comprometer a raiz e gerar infecção sistêmica.",
@@ -45,8 +45,7 @@ export default function VetAlert() {
               6 sinais que pedem consulta — não adie.
             </h2>
             <p style={{ marginTop: 18, color: "var(--muted)" }}>
-              Se o seu cão apresentar dois ou mais destes sinais, agende uma avaliação odontológica
-              veterinária nos próximos 7 dias.
+              Se o seu cão apresentar um ou mais destes sinais, procure orientação veterinária. Dor intensa, sangramento, dente móvel ou secreção exigem atenção mais rápida.
             </p>
             <div className="vet-list">
               {signs.map((s, i) => (

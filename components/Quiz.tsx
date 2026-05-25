@@ -39,8 +39,8 @@ const questions: Question[] = [
 type Risk = "low" | "med" | "high";
 const riskCopy: Record<Risk, { title: string; body: string }> = {
   low: { title: "Risco baixo — continue assim! ", body: "Seu cão está em boas mãos. Mantenha a frequência atual e baixe o calendário para não perder nenhum dia." },
-  med: { title: "Atenção: sinais leves de alerta ", body: "Dá pra reverter facilmente em casa, com o método e a frequência certos. O guia explica passo a passo." },
-  high: { title: "Recomendamos avaliação veterinária ", body: "Os sinais que você descreveu pedem uma consulta — e enquanto isso, dá pra começar a higienização hoje. Baixe o material." },
+  med: { title: "Atenção: sinais leves de alerta ", body: "Alguns sinais leves podem melhorar com uma rotina consistente de higiene oral, mas a avaliação veterinária é importante se houver dor, sangramento ou tártaro visível." },
+  high: { title: "Recomendamos avaliação veterinária ", body: "Os sinais descritos indicam que vale agendar uma avaliação veterinária." },
 };
 
 export default function Quiz() {
@@ -64,10 +64,10 @@ export default function Quiz() {
         <div className="quiz">
           <div className="quiz-grid">
             <div>
-              <span className="eyebrow" style={{ color: "var(--salmon)" }}>Diagnóstico em 30s</span>
+              <span className="eyebrow" style={{ color: "var(--salmon)" }}>Check-up guiado</span>
               <h2 style={{ marginTop: 18 }}>Seu cão precisa de atenção bucal agora?</h2>
               <p style={{ marginTop: 16, opacity: 0.78, fontSize: 16 }}>
-                3 perguntas rápidas e você descobre o nível de cuidado ideal — e quais materiais do kit usar primeiro.
+                3 perguntas rápidas para identificar sinais de atenção e entender por onde começar os cuidados em casa.
               </p>
               <div className="quiz-progress">
                 <div className="quiz-progress-meta">
@@ -104,7 +104,7 @@ export default function Quiz() {
                     <div className="quiz-result-icon"><Icon name="check" size={22} /></div>
                     <div>
                       <p style={{ fontWeight: 600, marginBottom: 6 }}>{risk && riskCopy[risk].body}</p>
-                      <p style={{ fontSize: 14, opacity: 0.8 }}>O material gratuito traz o protocolo completo para o seu caso.</p>
+                      <p style={{ fontSize: 14, opacity: 0.8 }}>O material gratuito traz orientações gerais para começar os cuidados de forma gradual.</p>
                     </div>
                   </div>
                   <div className="quiz-actions">

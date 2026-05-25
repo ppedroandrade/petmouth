@@ -21,7 +21,6 @@ const items = [
 
 const benefits = [
   { t: "Material 100% gratuito", s: "Você só precisa do e-mail." },
-  { t: "Revisado por veterinários", s: "Dra. Mariana Quintela e equipe." },
   { t: "Pra qualquer raça e idade", s: "Filhote, adulto ou idoso — tem protocolo específico." },
 ];
 
@@ -36,7 +35,7 @@ export default function FinalCTA() {
                 O kit completo, grátis
               </span>
               <h2 style={{ marginTop: 18 }}>
-                Comece <em>hoje</em>. Em 7 dias seu cão já te recebe pra escovar.
+                Comece <em>hoje</em>. Uma adaptação gradual para tornar a escovação mais tranquila.
               </h2>
               <p className="final-cta-sub">
                 Tudo que você precisa pra transformar a higiene bucal num momento de carinho — e não

@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "PetMouth — Higiene bucal canina sem trauma",
   description:
-    "O método que veterinários recomendam para escovar os dentes do seu cão sem briga. Material gratuito + diagnóstico em 30 segundos.",
+    "Orientações baseadas em recomendações veterinárias para criar uma rotina de escovação dental canina.",
 };
 
 export default function RootLayout({
