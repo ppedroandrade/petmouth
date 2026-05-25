@@ -81,8 +81,7 @@ export default function Tutorial() {
               <div className="social-caption">
                 <strong>4.218 curtidas</strong>
                 <p style={{ marginTop: 6 }}>
-                  <strong>petmouth.udc</strong> O segredo pra escovar sem briga? Posicionamento.
-                  Salve esse reel{" "}
+                  <strong>petmouth.udc</strong>Escovar os dentes não precisa virar uma batalha diária. {" "}
                   <Icon
                     name="tooth"
                     size={14}
