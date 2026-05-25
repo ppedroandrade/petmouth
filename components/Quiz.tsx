@@ -10,37 +10,37 @@ const questions: Question[] = [
   {
     q: "Como está o hálito do seu cão hoje?",
     options: [
-      { icon: "leaf", title: "Neutro", sub: "Sem cheiro forte" },
-      { icon: "drop", title: "Levemente alterado", sub: "Notei nas últimas semanas" },
-      { icon: "alert", title: "Muito forte", sub: "Sinto à distância" },
-      { icon: "clock", title: "Não sei dizer", sub: "Nunca prestei atenção" },
+      { icon: "leaf", title: "Neutro ", sub: "Sem cheiro forte" },
+      { icon: "drop", title: "Levemente alterado ", sub: "Notei nas últimas semanas" },
+      { icon: "alert", title: "Muito forte ", sub: "Sinto à distância" },
+      { icon: "clock", title: "Não sei dizer ", sub: "Nunca prestei atenção" },
     ],
   },
   {
     q: "Você já viu manchas amareladas nos dentes dele?",
     options: [
-      { icon: "check", title: "Não, dentes brancos", sub: "Sem alterações visíveis" },
-      { icon: "tooth", title: "Manchas no fundo", sub: "Só nos dentes do fundo" },
-      { icon: "alert", title: "Sim, vários dentes", sub: "Tártaro visível" },
-      { icon: "chat", title: "Ele não deixa eu ver", sub: "Não consigo abrir a boca" },
+      { icon: "check", title: "Não, dentes brancos ", sub: "Sem alterações visíveis" },
+      { icon: "tooth", title: "Manchas no fundo ", sub: "Só nos dentes do fundo" },
+      { icon: "alert", title: "Sim, vários dentes ", sub: "Tártaro visível" },
+      { icon: "chat", title: "Ele não deixa eu ver ", sub: "Não consigo abrir a boca" },
     ],
   },
   {
     q: "Com que frequência você escova os dentes dele?",
     options: [
-      { icon: "sparkle", title: "Todos os dias", sub: "Faz parte da rotina" },
-      { icon: "calendar", title: "1–2x por semana", sub: "Quando lembro" },
-      { icon: "clock", title: "Raramente", sub: "Já tentei e desisti" },
-      { icon: "x", title: "Nunca", sub: "Nem sei como começar" },
+      { icon: "sparkle", title: "Todos os dias ", sub: "Faz parte da rotina" },
+      { icon: "calendar", title: "1–2x por semana ", sub: "Quando lembro" },
+      { icon: "clock", title: "Raramente ", sub: "Já tentei e desisti" },
+      { icon: "x", title: "Nunca ", sub: "Nem sei como começar" },
     ],
   },
 ];
 
 type Risk = "low" | "med" | "high";
 const riskCopy: Record<Risk, { title: string; body: string }> = {
-  low: { title: "Risco baixo — continue assim!", body: "Seu cão está em boas mãos. Mantenha a frequência atual e baixe o calendário para não perder nenhum dia." },
-  med: { title: "Atenção: sinais leves de alerta", body: "Dá pra reverter facilmente em casa, com o método e a frequência certos. O guia explica passo a passo." },
-  high: { title: "Recomendamos avaliação veterinária", body: "Os sinais que você descreveu pedem uma consulta — e enquanto isso, dá pra começar a higienização hoje. Baixe o material." },
+  low: { title: "Risco baixo — continue assim! ", body: "Seu cão está em boas mãos. Mantenha a frequência atual e baixe o calendário para não perder nenhum dia." },
+  med: { title: "Atenção: sinais leves de alerta ", body: "Dá pra reverter facilmente em casa, com o método e a frequência certos. O guia explica passo a passo." },
+  high: { title: "Recomendamos avaliação veterinária ", body: "Os sinais que você descreveu pedem uma consulta — e enquanto isso, dá pra começar a higienização hoje. Baixe o material." },
 };
 
 export default function Quiz() {

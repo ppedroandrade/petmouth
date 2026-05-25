@@ -34,7 +34,7 @@ const steps: Step[] = [
   },
   {
     title: "Crie a rotina diária",
-    body: "Sempre no mesmo horário, sempre seguido de uma recompensa. 14 dias e vira hábito — pra você e pra ele.",
+    body: "Sempre no mesmo horário, sempre seguido de uma recompensa. Assim fica mais fácil de criar o hábito.",
     tipIcon: "calendar",
     tip: "Use o calendário do kit pra marcar cada dia.",
   },

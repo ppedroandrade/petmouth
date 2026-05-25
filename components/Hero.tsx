@@ -12,7 +12,7 @@ export default function Hero() {
           </h1>
           <p className="hero-sub">
             80% dos cães com mais de 3 anos têm doença periodontal — e quase nenhum tutor percebe a
-            tempo. Comece hoje, com o método que veterinários recomendam para escovar sem briga.
+            tempo. Comece hoje escovar sem briga.
           </p>
           <div className="hero-cta-row">
             <a className="btn btn-primary btn-large" href="#kit">
@@ -22,7 +22,7 @@ export default function Hero() {
               <Icon name="play" size={14} /> Fazer o diagnóstico
             </a>
           </div>
-          <div className="hero-meta">
+          {/* <div className="hero-meta">
             <div className="hero-meta-item">
               <span className="hero-meta-num">12k+</span>
               <span className="hero-meta-label">tutores escovando todo dia</span>
@@ -35,7 +35,7 @@ export default function Hero() {
               <span className="hero-meta-num">7d</span>
               <span className="hero-meta-label">para criar o hábito</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="hero-visual">
@@ -46,7 +46,7 @@ export default function Hero() {
            */}
           <ImgBox
             className="hero-photo"
-            src="/images/hero-dog.jpg"
+            src="/images/hero-dog2.png"
             alt="Golden Retriever sorrindo"
             fit="cover"
             position="center center"
@@ -55,11 +55,11 @@ export default function Hero() {
 
           <div className="seal">
             <div className="seal-content">
-              <div className="seal-eyebrow">Aprovado por</div>
+              <div className="seal-eyebrow">Estudo feito por</div>
               <div className="seal-inner">
-                Veterinários
+                Alunos da
                 <br />
-                Brasileiros
+                UDC
               </div>
               <div className="seal-stars">★★★★★</div>
             </div>
@@ -71,7 +71,6 @@ export default function Hero() {
             </div>
             <div className="fc-text">
               <div className="fc-title">Hálito fresco</div>
-              <div className="fc-sub">em 14 dias</div>
             </div>
           </div>
 
@@ -81,7 +80,6 @@ export default function Hero() {
             </div>
             <div className="fc-text">
               <div className="fc-title">Sem tártaro</div>
-              <div className="fc-sub">prevenção real</div>
             </div>
           </div>
         </div>

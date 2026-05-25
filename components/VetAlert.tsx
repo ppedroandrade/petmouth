@@ -23,12 +23,17 @@ export default function VetAlert() {
            * Container vet-image é 5:6 (0.833). Imagem ratio = 0.94.
            * object-fit:cover com position top para manter o rosto/procedimento visível.
            */}
+          {/*
+           * FOTO_VETERINARIA_CONSULTA.png — 373×559 (ratio ~2:3)
+           * container vet-image tem aspect-ratio: 2/3 → contain preenche
+           * o espaço todo sem cortar nenhuma parte da imagem.
+           */}
           <ImgBox
             className="vet-image"
             src="/images/FOTO_VETERINARIA_CONSULTA.png"
-            alt="Veterinária realizando consulta odontológica em cão"
-            fit="cover"
-            position="center top"
+            alt="Cachorro com estetoscópio"
+            fit="contain"
+            position="center center"
             sizes="(max-width: 980px) 100vw, 520px"
           />
 

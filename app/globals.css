@@ -506,7 +506,8 @@ section { padding: 112px 0; position: relative; }
 /* === VET ALERT === */
 .vet-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 .vet-image {
-  aspect-ratio: 5/6;
+  /* FOTO_VETERINARIA_CONSULTA.png — 373×559 ≈ 2:3 → contain preenche sem corte */
+  aspect-ratio: 2 / 3;
   border-radius: var(--radius-lg);
   background:
     repeating-linear-gradient(135deg, rgba(30,42,74,.05) 0 2px, transparent 2px 14px),
@@ -572,8 +573,11 @@ section { padding: 112px 0; position: relative; }
   box-shadow: var(--shadow-lg);
 }
 .kit-image {
-  /* Proporção da imagem real (MOCKUP_KIT_DIGITAL.png: 473×681 ≈ 2:3) */
-  aspect-ratio: 2/3;
+  /*
+   * Container quadrado: mais alto que a imagem (528×633 ≈ 5:6),
+   * assim o cachorro fica ancorado na base com espaço de respiro acima.
+   */
+  aspect-ratio: 1 / 1;
   border-radius: 14px; margin-bottom: 20px;
   background:
     repeating-linear-gradient(135deg, rgba(30,42,74,.06) 0 2px, transparent 2px 12px),

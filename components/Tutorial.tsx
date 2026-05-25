@@ -3,24 +3,24 @@ import VideoBox from "./VideoBox";
 
 const items = [
   {
-    t: "Posicione-se ao lado do cão, nunca de frente",
-    s: "De frente parece confronto. Ao lado, vocês são parceiros.",
+    t: "Escolha um momento tranquilo",
+    s: "Ambientes calmos ajudam o cão a se sentir mais confortável durante a escovação.",
   },
   {
-    t: "Levante o lábio com o polegar, mantenha boca fechada",
-    s: "A maioria dos cães prefere escovar com a boca fechada — menos invasivo.",
+    t: "Apresente a escova aos poucos",
+    s: "Deixe o cão cheirar, lamber e se acostumar com a pasta e a escova antes de começar.",
   },
   {
-    t: "Movimentos circulares, sempre da gengiva pro dente",
-    s: "Como na sua escovação. A 45° é o ângulo ideal pra remover placa.",
+    t: "Escove com movimentos suaves",
+    s: "Faça movimentos circulares firmes, porem leves, próximos à gengiva, sem forçar a abertura da boca.",
   },
   {
-    t: "Foco na parte externa dos dentes",
-    s: "É onde 90% do tártaro se forma. A parte interna a língua já limpa naturalmente.",
+    t: "Priorize a parte externa dos dentes",
+    s: "A região que fica em contato com a bochecha e os lábios tende a acumular mais placa e tártaro no dia a dia.",
   },
   {
-    t: "Termine sempre com elogio efusivo",
-    s: "A última memória da sessão tem que ser positiva. Festinha vale ouro.",
+    t: "Crie uma rotina positiva",
+    s: "Elogios, carinho e recompensas após a escovação ajudam o cão a aceitar com mais facilidade.",
   },
 ];
 
@@ -32,12 +32,8 @@ export default function Tutorial() {
           <div>
             <span className="eyebrow">Tutorial detalhado</span>
             <h2 style={{ marginTop: 18, fontSize: "clamp(36px, 4.5vw, 56px)" }}>
-              A técnica que veterinários usam — em 5 movimentos.
+              A forma certa de escovar — em 5 movimentos.
             </h2>
-            <p style={{ marginTop: 18, color: "var(--muted)" }}>
-              Inclui vídeo demonstrativo gravado pela Dra. Mariana Quintela (CRMV-SP 18.402) no
-              canal oficial.
-            </p>
             <div className="tutorial-list">
               {items.map((it, i) => (
                 <div key={i} className="tutorial-item">
@@ -85,7 +81,7 @@ export default function Tutorial() {
               <div className="social-caption">
                 <strong>4.218 curtidas</strong>
                 <p style={{ marginTop: 6 }}>
-                  <strong>petmouth.br</strong> O segredo pra escovar sem briga? Posicionamento.
+                  <strong>petmouth.udc</strong> O segredo pra escovar sem briga? Posicionamento.
                   Salve esse reel{" "}
                   <Icon
                     name="tooth"

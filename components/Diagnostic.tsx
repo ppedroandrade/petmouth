@@ -26,7 +26,7 @@ const cards: DiagCard[] = [
   {
     status: "warn",
     label: "Gengivite inicial",
-    body: "Vermelha nas bordas, sangra ao toque. Reversível em 7–10 dias.",
+    body: "Vermelha nas bordas, sangra ao toque.",
     src: "/images/GENGIVITE_LEVE.jpg",
     alt: "Gengivite leve em cão — gengiva avermelhada nas bordas",
     // 1200×600 landscape → container 4:5; foca na borda gengival

@@ -63,12 +63,17 @@ export default function FinalCTA() {
                * O container kit-image usa aspect-ratio: 2/3 pra combinar com a
                * proporção real da imagem. object-fit:contain exibe o mockup inteiro.
                */}
+              {/*
+               * MOCKUP_KIT_DIGITAL.png — 528×633 (ratio ~5:6)
+               * container é mais alto (ratio 1:1) → contain + bottom ancoram o cachorro
+               * na base do card com espaço de respiro no topo.
+               */}
               <ImgBox
                 className="kit-image"
                 src="/images/MOCKUP_KIT_DIGITAL.png"
                 alt="Mockup do kit digital PetMouth"
                 fit="contain"
-                position="center center"
+                position="center bottom"
                 sizes="(max-width: 980px) 100vw, 400px"
               />
 
