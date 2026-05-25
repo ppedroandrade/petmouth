@@ -15,7 +15,8 @@ export default function Hero() {
             Aprenda a criar uma rotina de escovação gradual, segura e sem briga.
           </p>
           <div className="hero-cta-row">
-            <a className="btn btn-primary btn-large" href="#kit">
+            {/* PDF → /public/downloads/kit-petmouth.pdf */}
+            <a className="btn btn-primary btn-large" href="/downloads/kit-petmouth.pdf" download="Kit PetMouth.pdf">
               <Icon name="download" size={18} /> Baixe o material grátis
             </a>
             <a className="btn btn-ghost" href="#quiz">

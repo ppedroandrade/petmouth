@@ -115,7 +115,8 @@ export default function Quiz() {
                     >
                       Refazer diagnóstico
                     </button>
-                    <a className="btn btn-primary" href="#kit" style={{ background: "var(--salmon)", color: "var(--navy)" }}>
+                    {/* PDF → /public/downloads/kit-petmouth.pdf */}
+                    <a className="btn btn-primary" href="/downloads/kit-petmouth.pdf" download="Kit PetMouth.pdf" style={{ background: "var(--salmon)", color: "var(--navy)" }}>
                       Baixar material <Icon name="arrow-right" size={14} />
                     </a>
                   </div>

@@ -20,8 +20,8 @@ const items = [
 ];
 
 const benefits = [
-  { t: "Material 100% gratuito", s: "Você só precisa do e-mail." },
-  { t: "Pra qualquer raça e idade", s: "Filhote, adulto ou idoso — tem protocolo específico." },
+  { t: "Download gratuito", s: "Acesso direto ao guia, sem cadastro e sem cobrança." },
+  { t: "Orientações para todas as fases", s: "Cuidados práticos para filhotes, adultos e idosos, com adaptação gradual." },
 ];
 
 export default function FinalCTA() {
@@ -88,9 +88,10 @@ export default function FinalCTA() {
                   </div>
                 ))}
               </div>
-              <button className="kit-cta">
+              {/* PDF → /public/downloads/kit-petmouth.pdf */}
+              <a className="kit-cta" href="/downloads/kit-petmouth.pdf" download="Kit PetMouth.pdf">
                 Baixar agora — é grátis <Icon name="arrow-right" size={14} />
-              </button>
+              </a>
               <p style={{ fontSize: 11, color: "var(--muted)", textAlign: "center", marginTop: 12 }}>
                 Você pode cancelar o e-mail quando quiser.
               </p>

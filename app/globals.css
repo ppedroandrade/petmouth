@@ -103,35 +103,7 @@ a { color: inherit; text-decoration: none; }
   white-space: nowrap;
 }
 .nav-cta:hover { background: var(--navy-2); transform: translateY(-1px); }
-.hamburger { display: none; width: 44px; height: 44px; border-radius: 10px; background: transparent; align-items: center; justify-content: center; flex-shrink: 0; }
-.hamburger:hover { background: rgba(30,42,74,.05); }
-.hamburger-bars { width: 22px; height: 14px; position: relative; }
-.hamburger-bars span {
-  position: absolute; left: 0; right: 0; height: 2px; background: var(--navy); border-radius: 2px;
-  transition: transform .25s, opacity .2s, top .25s;
-}
-.hamburger-bars span:nth-child(1) { top: 0; }
-.hamburger-bars span:nth-child(2) { top: 6px; }
-.hamburger-bars span:nth-child(3) { top: 12px; }
-.hamburger.open .hamburger-bars span:nth-child(1) { top: 6px; transform: rotate(45deg); }
-.hamburger.open .hamburger-bars span:nth-child(2) { opacity: 0; }
-.hamburger.open .hamburger-bars span:nth-child(3) { top: 6px; transform: rotate(-45deg); }
-
-.mobile-menu {
-  position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
-  background: var(--cream);
-  z-index: 40;
-  padding: 24px;
-  transform: translateY(-12px); opacity: 0; pointer-events: none;
-  transition: transform .25s, opacity .25s;
-  overflow-y: auto;
-}
-.mobile-menu.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-.mobile-menu a {
-  display: block; padding: 18px 4px; font-size: 22px; font-family: 'DM Serif Display', serif;
-  border-bottom: 1px solid var(--line);
-  color: var(--navy);
-}
+/* hamburger e mobile-menu removidos — mobile mostra só a logo */
 
 /* === HERO === */
 .hero {
@@ -590,12 +562,14 @@ section { padding: 112px 0; position: relative; }
 .kit-item { display: flex; gap: 12px; font-size: 14px; align-items: flex-start; }
 .kit-num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); width: 24px; flex-shrink: 0; padding-top: 2px; }
 .kit-cta {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
   width: 100%; background: var(--navy); color: var(--cream);
   padding: 18px; border-radius: 12px; font-size: 15px; font-weight: 500;
-  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-  transition: background .2s;
+  transition: background .2s, transform .15s;
+  text-decoration: none; /* garante estilo correto como <a> */
+  cursor: pointer;
 }
-.kit-cta:hover { background: var(--navy-2); }
+.kit-cta:hover { background: var(--navy-2); transform: translateY(-1px); }
 
 /* === FOOTER === */
 .footer {

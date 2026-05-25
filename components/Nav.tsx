@@ -12,7 +12,6 @@ const links = [
 ];
 
 export default function Nav() {
-  const [open, setOpen] = useState(false);
   const [active, setActive] = useState("quiz");
 
   useEffect(() => {
@@ -37,7 +36,6 @@ export default function Nav() {
 
   const handleClick = (e: React.MouseEvent, id: string) => {
     e.preventDefault();
-    setOpen(false);
     const el = document.getElementById(id);
     if (el) {
       const top = el.getBoundingClientRect().top + window.scrollY - 76;
@@ -63,6 +61,8 @@ export default function Nav() {
           </span>
           PetMouth
         </a>
+
+        {/* Links — visíveis só no desktop */}
         <div className="nav-links">
           {links.map((l) => (
             <a
@@ -78,31 +78,8 @@ export default function Nav() {
             Baixe o material <Icon name="arrow-right" size={14} />
           </a>
         </div>
-        <button
-          className={"hamburger" + (open ? " open" : "")}
-          onClick={() => setOpen(!open)}
-          aria-label="Menu"
-        >
-          <span className="hamburger-bars">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
-      </div>
-      <div className={"mobile-menu" + (open ? " open" : "")}>
-        {links.map((l) => (
-          <a key={l.id} href={"#" + l.id} onClick={(e) => handleClick(e, l.id)}>
-            {l.label}
-          </a>
-        ))}
-        <a
-          href="#kit"
-          onClick={(e) => handleClick(e, "kit")}
-          style={{ marginTop: 20, color: "var(--salmon-2)" }}
-        >
-          Baixe o material →
-        </a>
+
+        {/* Hamburger removido no mobile — nav mostra só a logo */}
       </div>
     </nav>
   );

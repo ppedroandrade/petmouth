@@ -1,0 +1,3 @@
+# Coloque o PDF aqui
+Nome esperado: kit-petmouth.pdf
+Caminho: /public/downloads/kit-petmouth.pdf
