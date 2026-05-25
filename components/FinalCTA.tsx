@@ -4,24 +4,19 @@ import ImgBox from "./ImgBox";
 const items = [
   {
     num: "01",
-    t: "Cartilha digital ilustrada (PDF, 24 páginas)",
-    s: "Protocolo completo de escovação por idade, raça e nível de aceitação.",
+    t: "Guia ilustrado sobre tártaro e saúde bucal",
+    s: "Entenda o que causa o tártaro, os sinais de alerta e como prevenir problemas antes que virem dor ou mau hálito.",
   },
   {
     num: "02",
-    t: "Calendário de escovação de 30 dias",
-    s: "Imprima ou use no celular. Marque cada dia, comemore cada semana.",
-  },
-  {
-    num: "03",
-    t: "Desafio 7 dias por e-mail",
-    s: "Uma dica curta por dia, pra você criar o hábito sem desistir.",
+    t: "Plano de escovação em 9 dias",
+    s: "Um passo a passo simples para acostumar seu pet à escova sem forçar, com evolução gradual dia após dia.",
   },
 ];
 
 const benefits = [
-  { t: "Download gratuito", s: "Acesso direto ao guia, sem cadastro e sem cobrança." },
-  { t: "Orientações para todas as fases", s: "Cuidados práticos para filhotes, adultos e idosos, com adaptação gradual." },
+  { t: "Material 100% gratuito", s: "Sem pegadinhas, sem upsell. Só conteúdo de qualidade pra cuidar do sorriso do seu pet." },
+  { t: "Pra qualquer raça e idade", s: "Filhote, adulto ou idoso — tem protocolo específico." },
 ];
 
 export default function FinalCTA() {
@@ -88,12 +83,16 @@ export default function FinalCTA() {
                   </div>
                 ))}
               </div>
-              {/* PDF → /public/downloads/kit-petmouth.pdf */}
-              <a className="kit-cta" href="/downloads/kit-petmouth.pdf" download="Kit PetMouth.pdf">
-                Baixar agora — é grátis <Icon name="arrow-right" size={14} />
-              </a>
+              <div className="kit-cta-row">
+                <a className="kit-cta kit-cta-primary" href="/downloads/kit-petmouth.pdf" download="Kit PetMouth.pdf">
+                  <Icon name="download" size={15} /> Cartilha PetMouth
+                </a>
+                <a className="kit-cta kit-cta-secondary" href="/downloads/kit-calendar.pdf" download="Calendário de Escovação.pdf">
+                  <Icon name="calendar" size={15} /> Calendário
+                </a>
+              </div>
               <p style={{ fontSize: 11, color: "var(--muted)", textAlign: "center", marginTop: 12 }}>
-                Você pode cancelar o e-mail quando quiser.
+                Dois materiais gratuitos — basta clicar e baixar.
               </p>
             </div>
           </div>
